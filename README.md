@@ -1,3 +1,3 @@
-# Skeleton-WP-Theme
-A Skeleton wordpress theme
+# Tom-Hanson-Theme
+My portfolio wordpress theme.
 
