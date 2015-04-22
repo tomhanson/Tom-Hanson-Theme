@@ -1,0 +1,15 @@
+.wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:before {
+    .background-rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+  }
+}

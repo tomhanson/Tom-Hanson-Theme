@@ -12,29 +12,70 @@
     <?php wp_head(); ?>
 </head>
 <script type="text/javascript">
+
   jQuery(document).ready(function($){
-    var nav = $('#primary-nav');
-    var navParent = $('#js-nav-perspective');
+    function homepageSize() {
+    var headerHeight = $('header').outerHeight();
+    var windowHeight = $(window).outerHeight();
+    var elementHeight = windowHeight;
+    $('#home-tagline').css('height', (elementHeight) + 'px');
+    $('#home-tagline').css('padding-top', (headerHeight) + 'px');
+    }
+    homepageSize();
+    var nav = $('.js-nav-click');
+    var navParent = $('html');
     nav.on("click", function() {
       if( navParent.hasClass('active') ) {
-        $(navParent).stop().removeClass('active');
+        navParent.stop().removeClass('active');
       } else {
-        $(navParent).stop().addClass('active');
+        navParent.stop().addClass('active');
       }
     });
   });
+
 </script>
 <body>
   <div id="js-nav-perspective" class="perspective">
     <nav id="primary-nav" role="navigation">
-     you can click me
-      <?php get_sidebar(); ?>
-    </nav>
-    <div class="wrapper">
-      <header>
-        <div class="container">
-          <div class="row">
-
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-right">
+            <div class="primary-nav__toggle">
+              <button class="js-nav-click primary-nav__mobile-button">
+                <span class="mobile-button--sr-only">Toggle navigation</span>
+                <span class="mobile-button--social-line">&nbsp;</span>
+                <span class="mobile-button--social-line">&nbsp;</span>
+                <span class="mobile-button--social-line">&nbsp;</span>
+              </button>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
+      <?php get_sidebar(); ?>
+    </nav>
+    <div class="wrapper" style="background-image: url('<?php print TEMPPATH; ?>/css/smitherines.jpg');">
+      <div class="nav-overflow">
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <div id="logo">
+                  <span class="glyphicon glyphicon-flash"></span>
+                </div>
+              </div>
+              <div class="col-xs-6 text-right">
+                <div class="primary-nav__toggle">
+                  <button class="js-nav-click primary-nav__mobile-button">
+                    <span class="mobile-button--sr-only">Toggle navigation</span>
+                    <span class="mobile-button--social-line">&nbsp;</span>
+                    <span class="mobile-button--social-line">&nbsp;</span>
+                    <span class="mobile-button--social-line">&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-xs-12 text-right">
+              social media
+              </div>
+            </div>
+          </div>
+        </header>
