@@ -8,7 +8,7 @@
     <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Abel|Raleway' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
 </head>
 <script type="text/javascript">

@@ -4,7 +4,7 @@
    <div class="row">
      <div class="col-xs-12">
         <div class="headline">
-         <h1><?php bloginfo( 'name' ); ?></h1>
+         <h1>Portfolio</h1>
          <p>I am a front end developer etc...</p>
         </div>
      </div>
