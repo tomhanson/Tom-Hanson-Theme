@@ -72,9 +72,7 @@
                     <span class="mobile-button--social-line">&nbsp;</span>
                   </button>
                 </div>
-              </div>
-              <div class="col-xs-12 text-right">
-              social media
+                <div class="social-icons">Social Media</div>
               </div>
             </div>
           </div>

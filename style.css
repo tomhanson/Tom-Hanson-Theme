@@ -1888,6 +1888,7 @@ h5 {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .primary-nav__toggle button {
   background-color: transparent;
