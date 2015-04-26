@@ -51,9 +51,17 @@
 .nav-overflow {
   overflow: scroll;
 }
+.front {
+  opacity: 1;
+  top: 0;
+  .transition(0.5s all);
+}
+.back {
+  opacity: 0;
+  top: -150px;
+  .transition(0.5s all);
+}
 .active {
-  /*height: 100%;
-*/
   .wrapper {
     overflow: hidden;
     .transform(translateZ(-1800px) translateX(-50%) rotateY(45deg));
@@ -74,5 +82,13 @@
       top: -4px;
       .transition(0.3s all);
     }
+  }
+  .front {
+    opacity: 0;
+    top: -150px;
+  }
+  .back {
+    opacity: 1;
+    top: 0;
   }
 }

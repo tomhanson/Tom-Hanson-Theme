@@ -39,7 +39,7 @@
     <nav id="primary-nav" role="navigation">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 text-right">
+          <div class="col-xs-12 text-right back">
             <div class="primary-nav__toggle">
               <button class="js-nav-click primary-nav__mobile-button">
                 <span class="mobile-button--sr-only">Toggle navigation</span>
@@ -47,6 +47,12 @@
                 <span class="mobile-button--social-line">&nbsp;</span>
                 <span class="mobile-button--social-line">&nbsp;</span>
               </button>
+            </div>
+            <div class="social-icons">
+              <i class="fa fa-codepen"></i>
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+              <i class="fa fa-twitter"></i>
             </div>
           </div>
         </div>
@@ -63,7 +69,7 @@
                   <span class="glyphicon glyphicon-flash"></span>
                 </div>
               </div>
-              <div class="col-xs-6 text-right">
+              <div class="col-xs-6 text-right front">
                 <div class="primary-nav__toggle">
                   <button class="js-nav-click primary-nav__mobile-button">
                     <span class="mobile-button--sr-only">Toggle navigation</span>
@@ -72,7 +78,12 @@
                     <span class="mobile-button--social-line">&nbsp;</span>
                   </button>
                 </div>
-                <div class="social-icons">Social Media</div>
+                <div class="social-icons">
+                  <i class="fa fa-codepen"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-github"></i>
+                  <i class="fa fa-twitter"></i>
+                </div>
               </div>
             </div>
           </div>

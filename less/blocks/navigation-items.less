@@ -1,0 +1,26 @@
+.menu-primary-nav-container {
+  float: right;
+  width: 45%;
+  .transform(translateY(35%) translateX(10%));
+}
+a {
+  .font-size(30);
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @primary-font-color;
+  font-family: @font-secondary;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 2px solid @tertiary-color;
+    color: @primary-font-color;
+  }
+}
+@media (min-width: @screen-sm) {
+  .menu-primary-nav-container {
+    a {
+    .font-size(60);
+    line-height: 90px;
+    }
+  }
+}
