@@ -2077,6 +2077,34 @@ header {
   Individual and reusable site blocks
   Media queries are held within each file to keep them together for usability
   ************************************ */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #000000;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4;
+  text-decoration: none;
+}
+.btn:hover {
+  border-bottom: 1px solid #000000;
+}
 .wrapper {
   background-size: cover;
   background-repeat: no-repeat;
@@ -2121,6 +2149,35 @@ header {
   -webkit-box-shadow: 11px 10px 12px 0px #2793e6;
   -moz-box-shadow: 11px 10px 12px 0px #2793e6;
   box-shadow: 11px 10px 12px 0px #2793e6;
+}
+.social-icons {
+  margin-top: 10px;
+  margin-top: 1rem;
+}
+.social-icons .fa {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  line-height: 1;
+  border-radius: 70px;
+  background-color: #ffffff;
+  padding: 4px 4px;
+  padding: 0.4rem 0.4rem;
+  color: #333333;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.social-icons .fa:hover {
+  background-color: #333333;
+  color: #ffffff;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .menu-primary-nav-container {
   float: right;
@@ -2170,6 +2227,10 @@ a:hover {
 .blog-post {
   background-size: cover;
   height: auto;
+  background-color: #dadad2;
+}
+.blog-post--right {
+  background-color: #f4f4f4;
 }
 .blog-post__wrapper {
   background-color: #ffffff;
@@ -2178,19 +2239,26 @@ a:hover {
   padding: 10px;
   padding: 1rem;
 }
-.blog-post .container {
-  height: 100%;
+.blog-post__wrapper p {
+  line-height: 1.4;
 }
-.blog-post div {
-  height: 100%;
+.blog-post__wrapper h2 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 5px 0px 25px;
+  margin: 0.5rem 0rem 2.5rem;
+}
+.blog-post__wrapper a {
+  margin: 30px 0px 0px;
+  margin: 3rem 0rem 0rem;
 }
 @media (min-width: 768px) {
-  .blog-post {
-    height: 420px;
-  }
   .blog-post__wrapper {
-    margin: 20px;
-    margin: 2rem;
+    margin: 25px 0px;
+    margin: 2.5rem 0rem;
+    padding: 60px;
+    padding: 6rem;
   }
 }
 .my-work__item {
