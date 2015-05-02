@@ -26,10 +26,12 @@
    <?php }?>
      <div class="container">
        <div class="row">
-        <div class="col-sm-6 <?php if( $c%2 == 0 ) echo 'col-sm-push-6'; ?>">
+        <div class="col-sm-8 col-lg-7 <?php if( $c%2 == 0 ) echo 'col-sm-push-4 col-lg-push-5'; ?>">
           <div class="blog-post__wrapper">
+           <p>By <?php the_author(); ?> on <?php the_date(); ?></p>
             <h2><?php the_title(); ?></h2>
             <p><?php the_excerpt(); ?></p>
+            <a class="btn" href="<?php the_permalink(); ?>" title="the_title(); ?>">Read More</a>
           </div>
         </div>
        </div>

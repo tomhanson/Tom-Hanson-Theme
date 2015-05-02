@@ -14,12 +14,14 @@
 <script type="text/javascript">
 
   jQuery(document).ready(function($){
-    function homepageSize() {
     var headerHeight = $('header').outerHeight();
     var windowHeight = $(window).outerHeight();
     var elementHeight = windowHeight;
-    $('#home-tagline').css('height', (elementHeight) + 'px');
-    $('#home-tagline').css('padding-top', (headerHeight) + 'px');
+
+
+    function homepageSize() {
+      $('#home-tagline').css('height', (elementHeight) + 'px');
+      $('#home-tagline').css('padding-top', (headerHeight) + 'px');
     }
     homepageSize();
     var nav = $('.js-nav-click');
@@ -31,10 +33,23 @@
         navParent.stop().addClass('active');
       }
     });
-  });
 
+    //Add a class after scroll passes 100%
+    $(window).on('scroll', function() {
+      
+        var scroll = $(window).scrollTop();
+      console.log(scroll);
+      if (scroll > windowHeight ) {
+        navParent.addClass('scrolled');
+
+      } else if( scroll <= windowHeight ) {
+        navParent.removeClass('scrolled');
+
+      }
+    });
+  });
 </script>
-<body>
+<body style="background-image: url('<?php print TEMPPATH; ?>/css/smitherines2.jpg');">
   <div id="js-nav-perspective" class="perspective">
     <nav id="primary-nav" role="navigation">
       <div class="container">
@@ -65,9 +80,11 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-6 text-left">
-                <div id="logo">
-                  <span class="glyphicon glyphicon-flash"></span>
-                </div>
+               <a href="/" title="home">
+                  <div id="logo">
+                    <span class="glyphicon glyphicon-flash"></span>
+                  </div>
+                </a>
               </div>
               <div class="col-xs-6 text-right front">
                 <div class="primary-nav__toggle">

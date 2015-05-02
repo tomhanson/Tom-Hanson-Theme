@@ -90,7 +90,7 @@ add_action( 'after_setup_theme', 'image_sizes' );
 
 // add thumbnail support
 function add_thumbnails() {
-	add_theme_support( 'post_thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'add_thumbnails' );
 ?>
