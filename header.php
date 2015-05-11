@@ -21,7 +21,7 @@
 
     function homepageSize() {
       $('#home-tagline').css('height', (elementHeight) + 'px');
-      $('#home-tagline').css('padding-top', (headerHeight) + 'px');
+      $('.header-spacer').css('padding-top', (headerHeight) + 'px');
     }
     homepageSize();
     var nav = $('.js-nav-click');
@@ -35,17 +35,14 @@
     });
 
     //Add a class after scroll passes 100%
-    $(window).on('scroll', function() {
+    $(window).on("scroll", function() {
       
-        var scroll = $(window).scrollTop();
-      console.log(scroll);
-      if (scroll > windowHeight ) {
-        navParent.addClass('scrolled');
-
-      } else if( scroll <= windowHeight ) {
-        navParent.removeClass('scrolled');
-
-      }
+      var section = $('#blog');
+        if ( section.scrollTop() <= headerHeight ) {
+          $('html').addClass('scrolled');
+        } else if( section.scrollTop() >= headerHeight && $('html').hasClass('scrolled') ) {
+          $('html').removeClass('scrolled');
+        }
     });
   });
 </script>

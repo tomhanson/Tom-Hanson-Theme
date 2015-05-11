@@ -1,23 +1,18 @@
 <?php get_header(); ?>
-<?php if( is_page('portfolio') ) { ?>
-  <section class="header-spacer" id="home-tagline">
+<section id="home-tagline">
  <div class="container">
    <div class="row">
      <div class="col-xs-12">
         <div class="headline">
-         <h1><?php the_title(); ?></h1>
-         <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-         <p><?php the_content(); ?></p>
-         <?php endwhile; endif;
-          wp_reset_query();
-          ?>
+         <h1>Portfolio</h1>
+         <p>I am a front end developer etc...</p>
         </div>
      </div>
    </div>
  </div>
 
 </section>
-<section class="header-spacer" id="my-work">
+<section id="my-work">
  <?php
    $args = array( 'posts_per_page' => '3', 'post_type' => My_Work );
   $myWork = new WP_Query($args);
@@ -37,8 +32,4 @@
 
 
 </section>
-
-<?php } else { ?>
-  add a template
-<?php } ?>
 <? get_footer(); ?>

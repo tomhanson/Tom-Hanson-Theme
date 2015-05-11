@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<section id="home-tagline">
+<section class="header-spacer" id="home-tagline">
  <div class="container">
    <div class="row">
-     <div class="col-xs-12">
+     <div class="col-sm-7 col-md-6">
         <div class="headline">
          <h1><?php bloginfo( 'name' ); ?></h1>
-         <p>I am a front end developer etc...blog</p>
+         <p><?php bloginfo('description'); ?></p>
         </div>
      </div>
    </div>
@@ -43,3 +43,5 @@
   wp_reset_query();  ?>
 </section>
 <? get_footer(); ?>
+
+
